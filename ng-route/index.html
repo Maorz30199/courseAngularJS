@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="CustomDirective">
+    <head>
+        <title>Mi Primera Pagina con AngularJS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="autocomplete-jquery-ui.structure.css">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.4.0-beta.5/angular-route.min.js"></script>
+        <script src="//code.jquery.com/jquery-2.2.3.js"></script>
+        <script src="autocomplete-jquery-ui.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers.js"></script>
+        <script src="directive.js"></script>
+        <style>
+            .circular{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+            }
+            
+            .no-list li{
+                list-style-type: none;
+            }
+            body, html{
+                text-align: center;
+                background-color: #eee;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div ng-view>
+            
+        </div>
+    </body>
+</html>
